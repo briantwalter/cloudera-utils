@@ -20,4 +20,7 @@ sudo yum -y install cloudera-director-server cloudera-director-client
 echo "INFO: Starting Cloudera Director"
 sudo service cloudera-director-server start
 
+echo "INFO: Cloning Director Scripts Github Repo"
+git clone https://github.com/cloudera/director-scripts.git /home/cloudera/
+
 echo "INFO: Ending Azure instance prep"
