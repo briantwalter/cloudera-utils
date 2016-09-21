@@ -3,7 +3,7 @@
 echo "INFO: Preparing Azure instance for Cloudera Director"
 echo "INFO: Installing packages"
 sudo yum -y update
-sudo yum -y install git curl wget vim python-pip screen mariadb bind bind-utils
+sudo yum -y install git curl wget vim python-pip screen mariadb mariadb-server bind bind-utils
 
 echo "INFO: Installing Java 8 JDK from Oracle"
 URL="http://download.oracle.com/otn-pub/java/jdk/8u101-b13"
@@ -21,6 +21,6 @@ echo "INFO: Starting Cloudera Director"
 sudo service cloudera-director-server start
 
 echo "INFO: Cloning Director Scripts Github Repo"
-git clone https://github.com/cloudera/director-scripts.git /home/cloudera/
+git clone https://github.com/cloudera/director-scripts.git /home/cloudera/director-scripts
 
 echo "INFO: Ending Azure instance prep"
