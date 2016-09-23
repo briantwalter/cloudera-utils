@@ -9,7 +9,7 @@ echo "INFO: Installing Java 8 JDK from Oracle"
 URL="http://download.oracle.com/otn-pub/java/jdk/8u101-b13"
 RPM="jdk-8u101-linux-x64.rpm"
 curl -v -j -k -L -H "Cookie: oraclelicense=accept-securebackup-cookie" ${URL}/${RPM} > /tmp/${RPM}
-sudo rpm -i /tmp/${RPM}
+sudo yum -y install /tmp/${RPM}
 
 echo "INFO: Configuring Cloudera Director YUM Repo"
 sudo wget "http://archive.cloudera.com/director/redhat/7/x86_64/director/cloudera-director.repo" -O /etc/yum.repos.d/cloudera-director.repo
