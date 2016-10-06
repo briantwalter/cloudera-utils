@@ -21,6 +21,6 @@ echo "INFO: Starting Cloudera Director"
 sudo service cloudera-director-server start
 
 echo "INFO: Cloning Director Scripts Github Repo"
-git clone https://github.com/cloudera/director-scripts.git /home/cloudera/director-scripts
+git clone https://github.com/cloudera/director-scripts.git ${HOME}/director-scripts
 
 echo "INFO: Ending Azure instance prep"
