@@ -6,8 +6,8 @@ sudo yum -y update
 sudo yum -y install git curl wget vim python-pip screen mariadb mariadb-server bind bind-utils
 
 echo "INFO: Installing Java 8 JDK from Oracle"
-URL="http://download.oracle.com/otn-pub/java/jdk/8u101-b13"
-RPM="jdk-8u101-linux-x64.rpm"
+URL="http://download.oracle.com/otn-pub/java/jdk/8u111-b14"
+RPM="jdk-8u111-linux-x64.rpm"
 curl -v -j -k -L -H "Cookie: oraclelicense=accept-securebackup-cookie" ${URL}/${RPM} > /tmp/${RPM}
 sudo yum -y install /tmp/${RPM}
 
