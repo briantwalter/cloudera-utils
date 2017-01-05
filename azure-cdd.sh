@@ -2,8 +2,8 @@
 
 YUMCMD="yum"
 
-echo "INFO: Adding kernel exclude to /etc/yum.conf"
-echo "exclude=kernel*" >> /etc/yum.conf
+#echo "INFO: Adding kernel exclude to /etc/yum.conf"
+#echo "exclude=kernel*" >> /etc/yum.conf
 
 echo "INFO: Preparing Azure instance for Cloudera Director"
 echo "INFO: Installing packages"
